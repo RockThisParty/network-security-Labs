@@ -1,0 +1,49 @@
+Jan 01 18:45:25.654 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Jan 01 18:45:25.654 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59883.
+Jan 01 18:45:25.664 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 01 18:45:25.664 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips 
+Jan 01 18:45:25.665 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips
+Jan 01 18:45:25.665 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c65e3500-a2cd-4331-b32e-638e47e3b651 
+Jan 01 18:45:25.665 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c65e3500-a2cd-4331-b32e-638e47e3b651
+Jan 01 18:45:25.665 HYPERVISOR: exec_cmd: vm create R6 6 c3600 
+Jan 01 18:45:25.665 VM: VM R6 created.
+Jan 01 18:45:25.665 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5031 
+Jan 01 18:45:25.665 HYPERVISOR: exec_cmd: c3600 get_mac_addr R6 
+Jan 01 18:45:25.666 HYPERVISOR: exec_cmd: c3600 set_chassis R6 3660 
+Jan 01 18:45:25.666 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:25.666 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x605683d4 
+Jan 01 18:45:25.667 HYPERVISOR: exec_cmd: vm set_ios R6 /home/wild/GNS3/images/IOS/c3660-telcoentk9-mz.124-13b.image 
+Jan 01 18:45:25.667 HYPERVISOR: exec_cmd: c3600 set_mac_addr R6 cc06.1d14.0000 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm set_ram R6 192 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:25.668 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-1FE-TX 
+Jan 01 18:45:27.513 HYPERVISOR: exec_cmd: nio create_udp udp-2cd129c9-dc1c-4c99-8e92-fe289d9d33bc 10070 127.0.0.1 10071 
+Jan 01 18:45:27.533 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 2 0 udp-2cd129c9-dc1c-4c99-8e92-fe289d9d33bc 
+Jan 01 18:45:27.533 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:27.633 HYPERVISOR: exec_cmd: nio create_udp udp-023014ca-2d04-4c3d-b2e4-119503ec592d 10074 127.0.0.1 10075 
+Jan 01 18:45:27.635 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-023014ca-2d04-4c3d-b2e4-119503ec592d 
+Jan 01 18:45:27.635 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:27.743 HYPERVISOR: exec_cmd: nio create_udp udp-9a064174-c74b-409f-b984-1ddbbd4ddc93 10080 127.0.0.1 10081 
+Jan 01 18:45:27.744 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-9a064174-c74b-409f-b984-1ddbbd4ddc93 
+Jan 01 18:45:27.744 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:45:27.899 HYPERVISOR: exec_cmd: nio create_udp udp-3fcfcff9-8cd4-4492-b12e-56c1977eb5d1 10086 127.0.0.1 10087 
+Jan 01 18:45:27.901 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-3fcfcff9-8cd4-4492-b12e-56c1977eb5d1 
+Jan 01 18:45:27.901 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:47:25.837 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Jan 01 18:47:25.843 HYPERVISOR: exec_cmd: vm set_ghost_file R6 /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c3660-telcoentk9-mz.124-13b.image-192.ghost 
+Jan 01 18:47:25.870 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:47:25.879 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+Jan 01 18:47:25.879 HYPERVISOR: exec_cmd: vm start R6 
+Jan 01 18:47:56.105 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jan 01 18:50:18.889 HYPERVISOR: exec_cmd: vm get_status R6 
+Jan 01 18:50:18.889 HYPERVISOR: exec_cmd: vm stop R6 
+Jan 01 18:50:19.051 VM: VM R6 shutdown.
+Jan 01 18:50:19.057 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jan 01 18:50:19.059 HYPERVISOR: exec_cmd: vm delete R6 
+Jan 01 18:50:19.059 VM: VM R6 destroyed.
+Jan 01 18:50:19.064 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 01 18:50:19.512 HYPERVISOR: Stopped.
+Jan 01 18:50:19.512 GENERAL: reset done.

@@ -1,0 +1,64 @@
+Jan 01 18:45:25.614 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Jan 01 18:45:25.614 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60119.
+Jan 01 18:45:25.623 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 01 18:45:25.623 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips 
+Jan 01 18:45:25.623 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips
+Jan 01 18:45:25.623 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/1bfb8325-d9c7-4652-997d-0dbf5029403b 
+Jan 01 18:45:25.623 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/1bfb8325-d9c7-4652-997d-0dbf5029403b
+Jan 01 18:45:25.623 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+Jan 01 18:45:25.624 VM: VM R5 created.
+Jan 01 18:45:25.624 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5030 
+Jan 01 18:45:25.624 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+Jan 01 18:45:25.624 HYPERVISOR: exec_cmd: c3600 set_chassis R5 3660 
+Jan 01 18:45:25.624 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:25.625 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x605683d4 
+Jan 01 18:45:25.625 HYPERVISOR: exec_cmd: vm set_ios R5 /home/wild/GNS3/images/IOS/c3660-telcoentk9-mz.124-13b.image 
+Jan 01 18:45:25.625 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.1d05.0000 
+Jan 01 18:45:25.626 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Jan 01 18:45:25.626 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Jan 01 18:45:25.626 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:25.626 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Jan 01 18:45:25.627 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:25.627 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Jan 01 18:45:25.980 HYPERVISOR: exec_cmd: nio create_udp udp-48b2d57e-bdbe-4a39-a990-eff091906d45 10002 127.0.0.1 10003 
+Jan 01 18:45:26.103 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-48b2d57e-bdbe-4a39-a990-eff091906d45 
+Jan 01 18:45:26.104 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:26.203 HYPERVISOR: exec_cmd: nio create_udp udp-06e0657e-4899-4d78-acdd-18a89898eb84 10006 127.0.0.1 10007 
+Jan 01 18:45:26.204 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 0 udp-06e0657e-4899-4d78-acdd-18a89898eb84 
+Jan 01 18:45:26.205 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:26.305 HYPERVISOR: exec_cmd: nio create_udp udp-ba0bcd47-1bfd-4318-8e7f-a1834e2fd410 10010 127.0.0.1 10011 
+Jan 01 18:45:26.306 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-ba0bcd47-1bfd-4318-8e7f-a1834e2fd410 
+Jan 01 18:45:26.306 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:45:26.421 HYPERVISOR: exec_cmd: nio create_udp udp-d7b13354-5276-4d6b-b4e1-2063771baa21 10016 127.0.0.1 10017 
+Jan 01 18:45:26.423 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-d7b13354-5276-4d6b-b4e1-2063771baa21 
+Jan 01 18:45:26.423 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:47:24.869 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Jan 01 18:47:24.870 VM: VM Ghost created.
+Jan 01 18:47:24.873 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/wild/GNS3/images/IOS/c3660-telcoentk9-mz.124-13b.image 
+Jan 01 18:47:24.874 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 01 18:47:24.878 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c3660-telcoentk9-mz.124-13b.image-192.ghost 
+Jan 01 18:47:24.879 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Jan 01 18:47:24.880 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 01 18:47:24.896 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 01 18:47:24.896 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 01 18:47:25.688 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 01 18:47:25.690 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 01 18:47:25.746 VM: VM Ghost shutdown.
+Jan 01 18:47:25.760 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 01 18:47:25.761 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 01 18:47:25.761 VM: VM Ghost destroyed.
+Jan 01 18:47:25.829 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Jan 01 18:47:25.830 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c3660-telcoentk9-mz.124-13b.image-192.ghost 
+Jan 01 18:47:25.837 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:47:25.842 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Jan 01 18:47:25.868 HYPERVISOR: exec_cmd: vm start R5 
+Jan 01 18:47:56.108 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jan 01 18:50:18.942 HYPERVISOR: exec_cmd: vm get_status R5 
+Jan 01 18:50:18.942 HYPERVISOR: exec_cmd: vm stop R5 
+Jan 01 18:50:19.087 VM: VM R5 shutdown.
+Jan 01 18:50:19.092 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jan 01 18:50:19.095 HYPERVISOR: exec_cmd: vm delete R5 
+Jan 01 18:50:19.095 VM: VM R5 destroyed.
+Jan 01 18:50:19.095 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 01 18:50:19.475 HYPERVISOR: Stopped.
+Jan 01 18:50:19.475 GENERAL: reset done.

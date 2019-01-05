@@ -1,0 +1,22 @@
+Jan 01 18:45:25.780 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Jan 01 18:45:25.780 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43011.
+Jan 01 18:45:25.790 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 01 18:45:25.790 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips 
+Jan 01 18:45:25.790 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips
+Jan 01 18:45:25.790 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-2 
+Jan 01 18:45:28.257 HYPERVISOR: exec_cmd: nio create_udp udp-72220f1a-89ef-4f6e-882a-ae53ccce2043 10097 127.0.0.1 10096 
+Jan 01 18:45:28.258 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-72220f1a-89ef-4f6e-882a-ae53ccce2043 
+Jan 01 18:45:28.276 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-72220f1a-89ef-4f6e-882a-ae53ccce2043 1 
+Jan 01 18:45:28.371 HYPERVISOR: exec_cmd: nio create_udp udp-fb25bfc3-9043-4b49-89d9-f6504a2afbad 10100 127.0.0.1 10101 
+Jan 01 18:45:28.372 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-fb25bfc3-9043-4b49-89d9-f6504a2afbad 
+Jan 01 18:45:28.378 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-fb25bfc3-9043-4b49-89d9-f6504a2afbad 1 
+Jan 01 18:45:28.495 HYPERVISOR: exec_cmd: nio create_udp udp-ed51ea63-7515-44e5-87b9-50b350f97bfe 10103 127.0.0.1 10102 
+Jan 01 18:45:28.495 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-ed51ea63-7515-44e5-87b9-50b350f97bfe 
+Jan 01 18:45:28.501 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-ed51ea63-7515-44e5-87b9-50b350f97bfe 1 
+Jan 01 18:45:28.609 HYPERVISOR: exec_cmd: nio create_udp udp-b367c1c4-0b6d-42d2-b5ae-06f851433500 10105 127.0.0.1 10104 
+Jan 01 18:45:28.609 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-2 udp-b367c1c4-0b6d-42d2-b5ae-06f851433500 
+Jan 01 18:45:28.623 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-2 udp-b367c1c4-0b6d-42d2-b5ae-06f851433500 1 
+Jan 01 18:50:18.812 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-2 
+Jan 01 18:50:18.879 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 01 18:50:19.120 HYPERVISOR: Stopped.
+Jan 01 18:50:19.120 GENERAL: reset done.

@@ -1,0 +1,63 @@
+Jan 01 18:45:25.578 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Jan 01 18:45:25.578 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53665.
+Jan 01 18:45:25.588 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 01 18:45:25.588 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips 
+Jan 01 18:45:25.588 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: hypervisor working_dir /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/a99fff3a-5bb2-467b-9198-250ef3732695 
+Jan 01 18:45:25.589 GENERAL: working_dir=/home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/a99fff3a-5bb2-467b-9198-250ef3732695
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Jan 01 18:45:25.589 VM: VM R4 created.
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5029 
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.589 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Jan 01 18:45:25.590 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jan 01 18:45:25.590 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.590 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x608724c0 
+Jan 01 18:45:25.591 HYPERVISOR: exec_cmd: vm set_ios R4 /home/wild/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Jan 01 18:45:25.591 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.1cf6.0000 
+Jan 01 18:45:25.591 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Jan 01 18:45:25.591 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.592 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-GE 
+Jan 01 18:45:25.593 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.593 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-GE 
+Jan 01 18:45:25.593 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.593 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-GE 
+Jan 01 18:45:25.593 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:25.594 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 PA-GE 
+Jan 01 18:45:26.985 HYPERVISOR: exec_cmd: nio create_udp udp-41e04278-9eda-40fb-8357-2e1fddcd2c4e 10040 127.0.0.1 10041 
+Jan 01 18:45:27.005 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 0 udp-41e04278-9eda-40fb-8357-2e1fddcd2c4e 
+Jan 01 18:45:27.005 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:27.106 HYPERVISOR: exec_cmd: nio create_udp udp-7d31c4fb-833b-4f6f-93e6-3a92716edbb2 10046 127.0.0.1 10047 
+Jan 01 18:45:27.107 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-7d31c4fb-833b-4f6f-93e6-3a92716edbb2 
+Jan 01 18:45:27.107 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:27.222 HYPERVISOR: exec_cmd: nio create_udp udp-bed38f95-0386-428f-a44c-14a6675065a4 10054 127.0.0.1 10055 
+Jan 01 18:45:27.223 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 2 0 udp-bed38f95-0386-428f-a44c-14a6675065a4 
+Jan 01 18:45:27.223 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:27.411 HYPERVISOR: exec_cmd: nio create_udp udp-2c0954b5-edc7-4674-aaa0-753226df0429 10064 127.0.0.1 10065 
+Jan 01 18:45:27.412 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 4 0 udp-2c0954b5-edc7-4674-aaa0-753226df0429 
+Jan 01 18:45:27.412 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:45:28.094 HYPERVISOR: exec_cmd: nio create_udp udp-d2ad51b6-9489-45df-8328-7bc23dc03afb 10094 127.0.0.1 10095 
+Jan 01 18:45:28.095 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-d2ad51b6-9489-45df-8328-7bc23dc03afb 
+Jan 01 18:45:28.095 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:47:24.818 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jan 01 18:47:24.820 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/wild/GNS3/projects/network-security-Labs/project-files/dynamips/c7200-jk9s-mz.124-13b.image-512.ghost 
+Jan 01 18:47:24.821 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:47:24.821 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Jan 01 18:47:24.821 HYPERVISOR: exec_cmd: vm start R4 
+Jan 01 18:47:55.055 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jan 01 18:48:25.055 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jan 01 18:50:19.346 HYPERVISOR: exec_cmd: vm get_status R4 
+Jan 01 18:50:19.346 HYPERVISOR: exec_cmd: vm stop R4 
+Jan 01 18:50:19.521 VM: VM R4 shutdown.
+Jan 01 18:50:19.522 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jan 01 18:50:19.523 HYPERVISOR: exec_cmd: vm delete R4 
+Jan 01 18:50:19.523 VM: VM R4 destroyed.
+Jan 01 18:50:19.523 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 01 18:50:19.939 HYPERVISOR: Stopped.
+Jan 01 18:50:19.939 GENERAL: reset done.

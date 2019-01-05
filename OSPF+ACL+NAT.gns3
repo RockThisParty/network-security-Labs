@@ -1412,7 +1412,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5040,
+                "console": 5004,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -1577,7 +1577,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5044,
+                "console": 5006,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -1831,7 +1831,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5051,
+                "console": 5009,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
@@ -1909,6 +1909,6 @@
     },
     "type": "topology",
     "variables": null,
-    "version": "2.1.10",
-    "zoom": 71
+    "version": "2.1.11",
+    "zoom": 50
 }
